@@ -168,10 +168,12 @@
                 success: function (data) { 
                     // handle success response 
                     // this functions triggers the redirect to an amazon hosted site 
+                    alert("Success");
                     confirmationFlow.success(); 
                 }, 
                 error: function (data) { 
                     // called on ajax error and timeout 
+                    alert("Failure");
                     confirmationFlow.error(); // abort Amazon Pay initConfirmationFlow 
                 }, 
                 timeout: "30000" //optimal: specify your timeout value (for example, 3000) 
