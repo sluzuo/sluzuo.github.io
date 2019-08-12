@@ -2,12 +2,12 @@
 <head>
   <script type='text/javascript'>
       window.onAmazonLoginReady = function() {
-          amazon.Login.setClientId('amzn1.application-oa2-client.0734be030d914857a72e6b8790375da0');
+          amazon.Login.setClientId('amzn1.application-oa2-client.5ad08d1eaccf421f8eb42d2d105d2f8a');
       };
   </script>
 
   <!-- this is the sandbox URL for Widgets.js -->
-<script type='text/javascript' src='https://static-fe.payments-amazon.com/OffAmazonPayments/jp/sandbox/lpa/js/Widgets.js?sellerId=A2IPQ7QYREP8F4'>
+<script type='text/javascript' src='https://static-fe.payments-amazon.com/OffAmazonPayments/jp/sandbox/lpa/js/Widgets.js?sellerId=A33KW7SA5OL6EF'>
   </script>
 
 </head>
@@ -56,7 +56,7 @@
 
     function renderWidgets() {
         new OffAmazonPayments.Widgets.AddressBook({
-            sellerId: 'A2IPQ7QYREP8F4',
+            sellerId: 'A33KW7SA5OL6EF',
             agreementType: 'BillingAgreement',
             onReady: function(billingAgreement) {
                 amazonBillingAgreementId = billingAgreement.getAmazonBillingAgreementId();
@@ -84,7 +84,7 @@
             }
         }).bind("addressBookWidgetDiv");
         new OffAmazonPayments.Widgets.Wallet({
-            sellerId: 'A2IPQ7QYREP8F4',
+            sellerId: 'A33KW7SA5OL6EF',
             design: {
                 size: {width:'400px', height:'260px'}
             },
@@ -101,7 +101,7 @@
 
     function renderConsent() {
         new OffAmazonPayments.Widgets.Consent({
-            sellerId: 'A2IPQ7QYREP8F4',
+            sellerId: 'A33KW7SA5OL6EF',
             // amazonBillingAgreementId obtained from the Amazon Address Book widget.
             amazonBillingAgreementId: amazonBillingAgreementId,
             design: {
